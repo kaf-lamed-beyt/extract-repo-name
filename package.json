@@ -1,0 +1,15 @@
+{
+    "name": "extract-repo-name",
+    "version": "1.0.0",
+    "description": "lightweight utility function to extract the repository name from a GitHub repository URL",
+    "main": "index.js",
+    "scripts": {
+      "build": "tsc"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+      "typescript": "^5.3.2"
+    }
+  }
+  
