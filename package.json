@@ -4,12 +4,15 @@
     "description": "lightweight utility function to extract the repository name from a GitHub repository URL",
     "main": "index.js",
     "scripts": {
-      "build": "tsc"
+        "build": "tsc",
+        "watch": "tsc index.ts --watch"
     },
     "author": "",
     "license": "MIT",
     "dependencies": {
-      "typescript": "^5.3.2"
+        "typescript": "^5.3.2"
+    },
+    "devDependencies": {
+        "semantic-release": "^22.0.8"
     }
-  }
-  
+}

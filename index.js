@@ -1,26 +1,16 @@
 /**
- *
- * @param {string} repoLink - A string parameter. It should be a valid link to a github repository
- * @returns a formatted repository name from the provided link
+ * @param {string} repoLink
+ * @returns a formatted repository name from the provided GitHub repository link
  * @example
  *
- * repoLinkFormatter("https://github.com/kaf-lamed-beyt/ng-tech-events")
+ * const repositoryName = repoLinkFormatter("https://github.com/kaf-lamed-beyt/ng-tech-events")
+ * console.log(repositoryName)
  */
-
-const repoLinkFormatter = (repoLink) => {
-  const repositoryURL = repoLink;
-  const splittedLink = repositoryURL.split("/");
-
-  const lastIndex = splittedLink.length - 1;
-  const repositoryName = splittedLink[lastIndex];
-
-  //   // for a use case where i need to bump the version, to illustrate semantic versioning
-  //   if (!repositoryName.includes("github.com")) {
-  //     console.log("💡 Please provide a valid GitHub URL");
-  //     return;
-  //   }
-
-  console.log(repositoryName);
+var repoLinkFormatter = function (repoLink) {
+    var repositoryURL = repoLink;
+    var splittedLink = repositoryURL.split("/");
+    var lastIndex = splittedLink.length - 1;
+    var repositoryName = splittedLink[lastIndex];
+    console.log(repositoryName);
 };
-
 repoLinkFormatter("https://github.com/kaf-lamed-beyt/ng-tech-events");
