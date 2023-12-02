@@ -7,6 +7,10 @@
         "build": "tsc",
         "watch": "tsc index.ts --watch"
     },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/kaf-lamed-beyt/extract-repo-name"
+    },
     "author": "",
     "license": "MIT",
     "dependencies": {
