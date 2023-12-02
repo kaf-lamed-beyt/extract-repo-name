@@ -9,9 +9,9 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/kaf-lamed-beyt/extract-repo-name"
+        "url": "https://github.com/kaf-lamed-beyt/extract-repo-name.git"
     },
-    "author": "",
+    "author": "Caleb Olojo",
     "license": "MIT",
     "dependencies": {
         "typescript": "^5.3.2"
