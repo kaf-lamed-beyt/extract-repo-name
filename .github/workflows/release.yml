@@ -1,27 +1,27 @@
 name: release
 
-on: 
-  push: 
-   branches: 
-    - master
-    
-jobs: 
-  release: 
-   runs-on: ubuntu-latest
+on:
+  push:
+    branches:
+      - master
 
-   steps: 
-    - name: Checkout current branch
-      uses: actions/checkout@v2
+jobs:
+  release:
+    runs-on: ubuntu-latest
 
-    - name: Setuo Node.js
-      uses: actions/setup-node@v2
-      with:
-        node-version: 20
-  
-    - name: Install dependencies
-      run: npm install
+    steps:
+      - name: Checkout current branch
+        uses: actions/checkout@v2
 
-    - name: Semantic Release
-      run: npx semantic-release
-      env: 
-       GH_TOKEN: ${{ secrets.GH_TOKEN }}
+      - name: Setuo Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Semantic Release
+        run: npx semantic-release
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
