@@ -7,7 +7,7 @@
  * console.log(repositoryName)
  */
 
-const repoLinkFormatter = (repoLink: string): void => {
+export const repoLinkFormatter = (repoLink: string): void => {
   const repositoryURL: string = repoLink;
   const splittedLink: string[] = repositoryURL.split("/");
 
