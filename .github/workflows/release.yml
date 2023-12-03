@@ -27,3 +27,5 @@ jobs:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
 permissions:
   contents: write
+  pages: write
+  id-token: write
